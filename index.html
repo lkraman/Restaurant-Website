@@ -24,6 +24,10 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+      rel="stylesheet"/>
+
     <!-- Vendor CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -46,15 +50,15 @@
     <!-- ======= Top Bar ======= -->
     <section
       id="topbar"
-      class="d-none d-lg-flex align-items-center fixed-top topbar-transparent"
+      class="fixed-top d-flex align-items-center"
     >
       <div class="container text-right">
-        <a href="tel:+13025437363"
+        <a id="topbar-link" href="tel:+13025437363"
           ><i class="icofont-phone"></i> (302) 543-7363</a
         >
         |
 
-        <a href="tel:+14847314123"
+        <a id="topbar-link" href="tel:+14847314123"
           ><i class="icofont-phone"></i> (484) 731-4123</a
         >
       </div>
@@ -63,7 +67,7 @@
     <!-- ======= Header ======= -->
     <header
       id="header"
-      class="fixed-top d-flex align-items-center header-transparent"
+      class="fixed-top d-flex align-items-center"
     >
       <div class="container d-flex align-items-center">
         <div class="logo mr-auto">
@@ -90,6 +94,46 @@
     </header>
     <!-- End Header -->
 
+
+
+    <!-- ======= Modal Section ======= -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-flex align-items-center">
+        <h5 class="modal-title" id="exampleModalLabel">TAKEOUT ORDERS ANNOUNCEMENT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="modal-body-content">
+        
+          <h2 class="modal-body-text  d-flex align-items-center">Takeout Ordering Temporarily Unavailable</h2>
+
+          <h5 class="modal-body-text  d-flex align-items-center">Due to site maintenance, online takeout ordering is unavailable. Please call to place your order. Sorry for any inconvenience.</h5>
+        </div>
+      </div>
+      <div class="modal-footer">
+  <a href="https://cafeamericana.hrpos.heartland.us/menu" class="modal-btn text-center"
+ >Takeout Kennett Square</a>
+
+
+        <a href="https://cafeamericanawilmington.hrpos.heartland.us/menu" class="modal-btn text-center"
+         >Takeout Pike Creek</a>
+        <button type="button" class="modal-btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    </div>
+    </div>
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container">
@@ -1062,7 +1106,11 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+          $("#exampleModal").modal('show');
+      });
+    </script> -->
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>

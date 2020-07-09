@@ -41,14 +41,14 @@
 
   <body>
     <!-- ======= Top Bar ======= -->
-    <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
-      <div class="container text-right">
-        <a href="tel:+13025437363"><i class="icofont-phone"></i> (302) 543-7363</a>
-        |
-    
-        <a href="tel:+14847314123"><i class="icofont-phone"></i> (484) 731-4123</a>
-      </div>
-    </section>
+<section id="topbar" class="fixed-top d-flex align-items-center topbar-transparent">
+  <div class="container text-right">
+    <a id="topbar-link" href="tel:+13025437363"><i class="icofont-phone"></i> (302) 543-7363</a>
+    |
+
+    <a id="topbar-link" href="tel:+14847314123"><i class="icofont-phone"></i> (484) 731-4123</a>
+  </div>
+</section>
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
@@ -65,12 +65,12 @@
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
-              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
               <li><a href="index.html#about">About</a></li>
               <li><a href="menu.html">Menu</a></li>
               <li><a href="index.html#events">Catering</a></li>
               <li><a href="index.html#gallery">Gallery</a></li>
-              <li class="active"><a href="#contact">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
 
             <li class="cta-btn text-center">
               <a href="menu.html">Full Menu</a>
@@ -107,13 +107,19 @@
       </section>
     </main> -->
     <!-- End #main -->
+ 
+    <div class="contact-banner border">
+      <div class="section-title">
+      <h2>Choose <span>Location</span></h2>
+      <span><a href="#location-pa" class="location-btn text-center mt-2">Kennett Square, Pa</a></span>
+      <span><a href="#location-de" class="location-btn text-center mt-2">Pike Creek, De</a></span>
+    </div>
+  </div>
 
     <section id="contact" class="contact">
       <div class="container">
+       
         <div class="section-title">
-          <h2>Contact <span>Us</span></h2><span><a class="active" href="#location-pa">Pennsylvania |</a></span><span>
-         <a href="#location-de">Delaware</a>
-          </span>
           <div class="contact-us-title"id="location-pa">Kennett Square, Pennsylvania</div>
             <a href="https://cafeamericanawilmington.hrpos.heartland.us/menu" class="contact-takeout-btn text-center" id="contact-takeout-bt">Order Takeout</a>
           <p class="contact-section-text">
@@ -143,8 +149,10 @@
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="icofont-clock-time icofont-rotate-90"></i>
               <h4>Open Hours:</h4>
-              <p>Monday-Saturday:<br />7:00 AM - 8:00 PM</p>
-              <p>Sunday:<br />7:00 AM - 4:00 PM</p>
+              <p>Monday-Saturday:</p>
+              <p>7:00 AM - 8:00 PM</p>
+              <p class="contact-card-text">Sunday:</p>
+                <p>7:00 AM - 4:00 PM</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
@@ -152,7 +160,7 @@
               <h4>Email:</h4>
                 <p><a href="mailto:CMCK@cafeamericana.net" class="contact-page-links">General Info</a></p>
                 
-                  <p><a href="mailto:CMCK@cafeamericana.net" class="">Catering</a></p>
+                  <p class="contact-card-text"><a href="mailto:CMCK@cafeamericana.net" >Catering</a></p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
@@ -175,9 +183,7 @@
    
   <div class="container">
     <div class="section-title">
-      <h2>Contact <span>Us</span></h2><span><a href="#location-pa">Pennsylvania |</a></span><span>
-        <a class="active"  href="#location-de">Delaware</a>
-      </span>
+     
       <div class="contact-us-title" id="location-de">Pike Creek, Delaware</div>
         <a href="https://cafeamericana.hrpos.heartland.us/menu" class="contact-takeout-btn text-center"
           id="contact-takeout-bt">Order Takeout</a>
@@ -217,9 +223,12 @@
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="icofont-clock-time icofont-rotate-90"></i>
               <h4>Open Hours:</h4>
-              <p>Monday-Thursday:<br />7:00 AM - 9:00 PM</p>
-              <p>Friday & Saturday:<br />7:00 AM - 10:00 PM</p>
-              <p>Sunday:<br />7:00 AM - 8:00 PM</p>
+              <p>Monday-Thursday:</p>
+              <p>7:00 AM - 9:00 PM</p>
+              <p class="contact-card-text">Friday & Saturday:</p>
+              <p>7:00 AM - 10:00 PM</p>
+              <p class="contact-card-text">Sunday:</p>
+              <p>7:00 AM - 8:00 PM</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
@@ -227,7 +236,7 @@
               <h4>Email:</h4>
             <p><a href="mailto:CMCK@cafeamericana.net" class="contact-page-links">General Info</a></p>
             
-            <p><a href="mailto:CMCK@cafeamericana.net" class="">Catering</a></p>
+            <p class="contact-card-text"><a href="mailto:CMCK@cafeamericana.net" class="">Catering</a></p>
             </div>
             
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">

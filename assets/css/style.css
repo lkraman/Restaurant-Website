@@ -21,7 +21,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Satisfy', sans-serif;
+  font-family: 'EB Garamond', serif;
+}
+
+hr.solid {
+  border-top: 2px solid #999;
+  max-width: 10rem;
 }
 
 /*--------------------------------------------------------------
@@ -61,8 +66,7 @@ h6 {
   font-size: 15px;
   height: 50px;
   transition: all 0.5s;
-  background: rgba(26, 24, 22, 0.8);
-  color: rgba(255, 255, 255, 0.7);
+  background: rgba(26, 24, 22, 0.3);
 }
 
 #topbar.topbar-transparent {
@@ -74,7 +78,11 @@ h6 {
 }
 
 #topbar i {
-  color: #8fa083;
+  color: #ef3c24;
+}
+
+#topbar-link {
+  color: #ef3c24;
 }
 
 #topbar i + i {
@@ -118,13 +126,12 @@ h6 {
 
 #header .logo img {
   padding: 0;
-  margin: 0;
+
   max-width: 8rem;
 }
 
 @media (max-width: 992px) {
   #header {
-    top: 0;
     background: rgba(26, 24, 22, 0.85);
   }
   #header .logo img {
@@ -170,7 +177,7 @@ h6 {
 }
 
 .nav-menu .cta-btn a {
-  background: #8fa083;
+  background: #ef3c24;
   color: #fff;
   border-radius: 50px;
   margin: 0 0 0 20px;
@@ -183,7 +190,7 @@ h6 {
 }
 
 .nav-menu .cta-btn a:hover {
-  background: #829574;
+  background: #d1260f;
   color: #fff;
 }
 
@@ -270,7 +277,7 @@ h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 15px;
+  top: 69px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -325,7 +332,7 @@ h6 {
 }
 
 .mobile-nav .cta-btn a {
-  background: #8fa083;
+  background: #ef3c24;
   color: #fff;
   border-radius: 50px;
   margin: 20px;
@@ -339,7 +346,7 @@ h6 {
 }
 
 .mobile-nav .cta-btn a:hover {
-  background: #829574;
+  background: #d1260f;
   color: #fff;
 }
 
@@ -392,6 +399,55 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Homepage Modal
+--------------------------------------------------------------*/
+.modal-header {
+  background-color: #9cab91;
+}
+
+.modal-title {
+  color: #fff;
+}
+.modal-body {
+  background: url(../img/events-bg.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.modal-footer {
+  background-color: #9cab91;
+}
+
+.modal-body-content {
+  background: rgba(39, 37, 34, 0.6);
+}
+
+.modal-body-text {
+  color: #fff;
+  justify-content: center;
+}
+
+.modal-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border: 2px solid #8fa083;
+  border-radius: 50px;
+}
+
+.modal-btn:hover,
+.modal-btn:active {
+  color: #fff;
+  background: #8fa083;
 }
 
 /*--------------------------------------------------------------
@@ -911,6 +967,27 @@ section {
   margin-right: 0;
 }
 
+.menu-takeout-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border: 2px solid #8fa083;
+  border-radius: 50px;
+}
+
+.menu-takeout-btn:hover,
+.menu-takeout-btn:active {
+  color: #fff;
+  background: #8fa083;
+}
+
 .section-title-description {
   font-style: italic;
   padding: 0 15px;
@@ -921,7 +998,7 @@ section {
 
 .menu .menu-content-title {
   margin-top: 30px;
-  font-family: 'Satisfy', sans-serif;
+  font-family: 'EB Garamond', serif;
   font-size: 1.6rem;
   overflow: hidden;
   display: flex;
@@ -1414,6 +1491,9 @@ section {
 .contact .info-wrap {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  min-width: fit-content;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact .info {
@@ -1435,12 +1515,25 @@ section {
 .contact-us-title {
   margin-bottom: 20px;
   margin-top: 50px;
-  font-family: 'Satisfy', sans-serif;
+  font-family: 'EB Garamond', serif;
   font-size: 1.6rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
   position: relative;
+}
+
+.border-top {
+  border-width: 2px solid;
+  border-color: white !important;
+}
+
+.contact-banner {
+  text-align: center;
+
+  padding: 20px 0;
+  background-color: #fbfafa;
+  min-height: 40px;
 }
 
 .contact .info i {
@@ -1484,13 +1577,53 @@ section {
   color: #fff;
 }
 
+.contact .contact-content-title {
+  margin-top: 30px;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.6rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.contact .contact-content-title-description {
+  font-style: italic;
+
+  font-family: 'Comic Neue', sans-serif;
+  color: #948c81;
+  margin-top: 0px;
+
+  font-size: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+a.location-btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border: 2px solid #8fa083;
+  border-radius: 50px;
+}
+
 a.contact-takeout-btn {
   background: #8fa083;
   width: 10rem;
   color: #fff !important;
-
+  align-items: center;
+  position: relative;
   border-radius: 50px;
-
+  justify-content: center;
   padding: 10px 25px;
   text-transform: uppercase;
   font-size: 13px;
@@ -1498,8 +1631,49 @@ a.contact-takeout-btn {
   letter-spacing: 1px;
 }
 
-p.contact-section-text {
+.contact-section-text {
   margin-top: 2rem;
+}
+
+.contact-card-text {
+  margin-top: 0.5rem;
+}
+
+.contact #contact-filters {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.contact #contact-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border: 2px solid #8fa083;
+  border-radius: 50px;
+}
+
+.contact #contact-filters li:hover,
+.contact #contact-filters li.filter-active {
+  color: #fff;
+  background: #8fa083;
+}
+
+.contact #contact-filters li:last-child {
+  margin-right: 0;
+}
+
+.map {
+  min-width: 100vw !important;
 }
 
 .contact .php-email-form {

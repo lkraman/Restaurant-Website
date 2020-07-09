@@ -153,6 +153,11 @@
     });
   }
 
+  // Modal
+  $(document).ready(function () {
+    $('#exampleModal').modal('show');
+  });
+
   // Intro carousel
   var heroCarousel = $('#heroCarousel');
   var heroCarouselIndicators = $('#hero-carousel-indicators');
@@ -212,6 +217,23 @@
       $(this).addClass('filter-active');
 
       menuIsotope.isotope({
+        filter: $(this).data('filter'),
+      });
+    });
+  });
+
+  // Contact locations isotope and filter
+  $(window).on('load', function () {
+    var contactIsotope = $('.contact-container').isotope({
+      itemSelector: '.contact-item',
+      layoutMode: 'fitRows',
+    });
+
+    $('#contact-filters li').on('click', function () {
+      $('#contact-filters li').removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      contactIsotope.isotope({
         filter: $(this).data('filter'),
       });
     });
