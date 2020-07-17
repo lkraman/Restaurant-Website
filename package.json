@@ -1,0 +1,19 @@
+{
+  "name": "cafe-americana-restaurant-website",
+  "version": "1.0.0",
+  "description": "Cafe Americana Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkraman/restaurant-website.git"
+  },
+  "author": "Laura Kraman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkraman/restaurant-website/issues"
+  },
+  "homepage": "https://github.com/lkraman/restaurant-website#readme"
+}
