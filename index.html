@@ -71,12 +71,10 @@
     >
       <div class="container d-flex align-items-center">
         <div class="logo mr-auto">
-         
           <a href="index.html"
             ><img src="assets/img/logo.png" alt="" class="img-fluid"
           /></a>
         </div>
-
         <nav class="nav-menu d-none d-lg-block">
           <ul>
             <li class="active"><a href="index.html">Home</a></li>
@@ -84,11 +82,19 @@
             <li><a href="#events">Catering</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li class="cta-btn text-center">
-              <a href="menu.html">Full Menu</a>
+            <li class="cta-btn dropdown text-center nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Menu
+              </a>
+              <div class="dropdown-menu text-center" id="dropdown-menu-btn-option" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-menu-btn-item" href="menu-pike-creek.html">Pike Creek Menu</a>
+                <a class="dropdown-menu-btn-item" href="menu-kennett.html">Kennett Sq Menu</a>
+              </div>
             </li>
           </ul>
         </nav>
+
         <!-- .nav-menu -->
       </div>
     </header>
@@ -97,15 +103,14 @@
 
 
     <!-- ======= Modal Section ======= -->
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<!-- <div class="container">
+ 
+<div class="modal fade" id="landingPageModal" tabindex="-1" role="dialog" aria-labelledby="landingPageModal"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header d-flex align-items-center">
-        <h5 class="modal-title" id="exampleModalLabel">TAKEOUT ORDERS ANNOUNCEMENT</h5>
+      <div class="modal-header">
+        <h5 class="modal-title" id="landingPageModal">TAKEOUT ORDERS ANNOUNCEMENT</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
@@ -116,24 +121,23 @@
         
           <h2 class="modal-body-text  d-flex align-items-center">Takeout Ordering Temporarily Unavailable</h2>
 
-          <h5 class="modal-body-text  d-flex align-items-center">Due to site maintenance, online takeout ordering is unavailable. Please call to place your order. Sorry for any inconvenience.</h5>
+          <h5 class="modal-body-text d-flex align-items-center">Due to site maintenance, online takeout ordering is unavailable. Please call to place your order. Sorry for any inconvenience.</h5>
         </div>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer d-flex align-items-center">
   <a href="https://cafeamericana.hrpos.heartland.us/menu" class="modal-btn text-center"
  >Takeout Kennett Square</a>
 
 
         <a href="https://cafeamericanawilmington.hrpos.heartland.us/menu" class="modal-btn text-center"
          >Takeout Pike Creek</a>
-        <button type="button" class="modal-btn" data-dismiss="modal">Close</button>
+        
       </div>
     </div>
   </div>
 </div>
-    </div>
-    </div>
-    </div>
+    </div> -->
+  
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container">
@@ -156,22 +160,17 @@
                     <span>Cafe</span> Americana
                   </h2>
                   <p class="animate__animated animate__fadeInUp">
-                    Home-style cooking!
-                    Always fresh and made from scratch!
+                    Yes, we are open! No reservations needed. Feel free to
+                    eat-in or take-out. Place your takeout order below!
+                   
                   </p>
-
-                  <div>
-                    <a
-                      href="menu.html"
-                      class="btn-menu animate__animated animate__fadeInUp scrollto"
-                      >Our Menu</a
-                    >
-                    <a
-                      href="contact.html"
-                      class="btn-book animate__animated animate__fadeInUp scrollto"
-                      >Contact Us</a
-                    >
-                  </div>
+    <div>
+      <a href="https://cafeamericana.hrpos.heartland.us/menu"
+        class="btn-menu animate__animated animate__fadeInUp scrollto">Kennett Square, Pa</a>
+      <a href="https://cafeamericanawilmington.hrpos.heartland.us/menu"
+        class="btn-book animate__animated animate__fadeInUp scrollto">Pike Creek, De</a>
+    </div>
+             
                 </div>
               </div>
             </div>
@@ -183,25 +182,17 @@
             >
               <div class="carousel-container">
                 <div class="carousel-content">
-                  <h2 class="animate__animated animate__fadeInDown">
-                    Order Takeout
-                  </h2>
+                <h2 class="animate__animated animate__fadeInDown">
+                  <span>Our</span> Menus
+                </h2>
                   <p class="animate__animated animate__fadeInUp">
-                    Yes, we are open! No reservations needed. Feel free to
-                    eat-in or take-out. Place your takeout order below!
+                    Check out our menus! Our homestyle cooking is always fresh and made from scratch!
                   </p>
-                  <div>
-                    <a
-                      href="https://cafeamericana.hrpos.heartland.us/menu"
-                      class="btn-menu animate__animated animate__fadeInUp scrollto"
-                      >Kennett Square, Pa</a
-                    >
-                    <a
-                      href="https://cafeamericanawilmington.hrpos.heartland.us/menu"
-                      class="btn-book animate__animated animate__fadeInUp scrollto"
-                      >Pike Creek, De</a
-                    >
-                  </div>
+                      <div>
+                      
+                        <a href="menu-kennett.html" class="btn-book animate__animated animate__fadeInUp scrollto">Kennet Square Menu</a>
+                          <a href="menu-pike-creek.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Pike Creek Menu</a>
+                      </div>
                 </div>
               </div>
             </div>

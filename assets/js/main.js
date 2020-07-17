@@ -155,7 +155,7 @@
 
   // Modal
   $(document).ready(function () {
-    $('#exampleModal').modal('show');
+    $('#landingPageModal').modal('show');
   });
 
   // Intro carousel
