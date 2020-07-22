@@ -446,11 +446,19 @@ hr.solid {
 .modal-header {
   background-color: #9cab91;
   justify-content: center !important;
+  text-align: center;
   border-bottom: 1px solid #535353;
+}
+
+.modal-header .close {
+  padding: 1rem 1rem;
+  margin: -1rem 1rem -1rem auto;
 }
 
 .modal-title {
   color: #fff;
+
+  justify-content: center !important;
   text-align: center;
 }
 .modal-body {
@@ -466,20 +474,23 @@ hr.solid {
 }
 
 .modal-body-content {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .modal-body-text {
-  color: #000;
+  justify-content: center !important;
   text-align: center;
 }
 
 h5.modal-body-text {
   padding: 0 1rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
 h2.modal-body-text {
   padding: 1rem;
+  font-weight: 700;
 }
 
 .modal-btn {
